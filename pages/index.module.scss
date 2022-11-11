@@ -1,0 +1,51 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+
+  .mountains {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+
+    .mountain {
+      background-color: #eaeaea;
+      padding: 1em;
+      display: flex;
+      flex-direction: row;
+      column-gap: 1em;
+    }
+
+    @mixin ball {
+      width: 1.4em;
+      height: 1.4em;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      cursor: pointer;
+    }
+
+    .white {
+      @include ball;
+      background-color: white;
+    }
+
+    .blue {
+      @include ball;
+      background-color: aqua;
+    }
+  }
+
+  .play {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+
+    .tern {
+    }
+
+    .fix {
+
+    }
+  }
+}
